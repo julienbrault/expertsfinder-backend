@@ -40,7 +40,7 @@ app.get('/profs/:prof_id:',
     }
 );
 
-app.listen(3000);
+app.listen(process.env.PORT);
 
 
 
