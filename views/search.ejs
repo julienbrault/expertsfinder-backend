@@ -1,0 +1,24 @@
+<h1 xmlns="http://www.w3.org/1999/html">Résultats de recherche</h1>
+
+<ul>
+    <% for(var i = 0; i < hits.hits.length; i++) { %>
+    <h2><u><%= hits.hits[i]._source.name %></u></u></u></h2>
+    <h3></h3><img src="<%= hits.hits[i]._source.picture %>"></h3>
+    <h5>Titre : <%= hits.hits[i]._source.title %></h4>
+    <h5>Départment : <%= hits.hits[i]._source.department %></h4>
+    <h5>Faculté : <%= hits.hits[i]._source.faculty %></h4>
+    <h5>Université : <%= hits.hits[i]._source.university %></h4>
+    <h5>Spécialités : <%= hits.hits[i]._source.keywords %></h4>
+    <h5>Langues parlées : <%= hits.hits[i]._source.language %></h4>
+    <h3>Coordonnées</h3>
+    <h5>Tél. : <%= hits.hits[i]._source.phone %></h4>
+    <h5>Courriel : <%= hits.hits[i]._source.email %></h4>
+    <h3>En savoir plus sur cet expert</h3>
+    <h5> Biographie : <%= hits.hits[i]._source.bio %></h4>
+    <h5>Articles : : <%= hits.hits[i]._source.articles %></h4>
+    <h5><a href="<%= hits.hits[i]._source.link %>">Cliquez ici pour visiter la page de l'expert</a></h4>
+
+    <% } %>
+</ul>
+
+

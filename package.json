@@ -1,0 +1,16 @@
+{
+  "name": "expertsfinder-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "essai.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "experts",
+    "university",
+    "finder"
+  ],
+  "author": "Julien",
+  "license": "Mit License"
+}
